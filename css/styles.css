@@ -1,0 +1,936 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;1,400&display=swap');;
+
+*{
+    margin: 2.0px;;
+    padding: 2.0px;;
+    box-sizing: border-box;;
+    text-decoration: none;;
+    list-style: none;;
+}
+
+.body {
+    font-family: 'Poppins', sans-serif;;
+}
+
+.container{
+    max-width: 1200px;;
+    margin: 0 auto;;
+}
+
+
+/*!----- Inicio video Fondo de pantalla  ----->*/
+
+video{
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -100;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+/*!---- Final video Fondo de pantalla  ----->*/
+
+
+
+.header{
+    background-image: url(../images/titulopt.gif);;
+    background-position: center bottom;;
+    background-repeat: no-repeat;;
+    background-size: cover;;
+    min-height: 70vh;;
+    display: flex;;
+    align-items: center;;
+    justify-content: center;
+}
+
+
+/*!---- inicio ----->*/
+
+.header-txt{
+    height: 180px;
+    text-align: center;;
+}
+
+.header-txt h1{
+    font-size: 85px;;
+    color: #fff;;
+    text-transform: uppercase;;
+    margin-bottom: 20px;;
+}
+
+.header-txt p{
+    color: #fff;;
+    font-size: 16px;;
+    padding: 0 250px;;
+    margin-bottom: 45px;;
+}
+
+.btn-1{
+    display: inline-block;;
+    padding: 6px 40px;;
+    border: 1px solid #fff;;
+    color: #fff;;
+    font-size: 16px;;
+    text-transform: uppercase;;
+    font-weight: 600;;
+}
+
+.btn-1:hover{
+    color: #102934;;
+    background-color: #fff;;
+}
+
+.general{
+    padding: 50px 0;;
+    text-align: center;;
+}
+
+.general-content{
+    display: flex;;
+    justify-content: space-between;;
+    margin-top: 55px;;
+}
+
+.general-1{
+    background-image: url(../images/r1.png);;
+    background-position: center center;;
+    background-repeat: no-repeat;;
+    background-size: cover;;
+    height: 400px;;
+    width: 500px;
+    padding: 70px 55px;;
+}
+
+.general-2{
+    background-image: url(../images/r2.png);;
+    background-position: center center;;
+    background-repeat: no-repeat;;
+    background-size: cover;;
+    height: 400px;;
+    width: 300px;
+    padding: 70px 5px;;
+}
+
+.general-3{
+    background-image: url(../images/r3.png);;
+    background-position: center center;;
+    background-repeat: no-repeat;;
+    background-size: cover;;
+    height: 400px;;
+    width: 500px;
+    padding: 70px 55px;;
+}
+
+.general-4{
+    background-image: url(../images/r6.png);; /*!-- r4>*/
+    background-position: center center;;
+    background-repeat: no-repeat;;
+    background-size: cover;;
+    height: 400px;;
+    width: 495px;
+    padding: 70px 5px;;
+}
+
+.general-5{
+    background-image: url(../images/r6.png);;     /*!---- r5 ----->*/
+    background-position: center center;;
+    background-repeat: no-repeat;;
+    background-size: cover;;
+    height: 400px;;
+    width: 450px;
+    padding: 70px 5px;;
+}
+
+.general-6{
+    background-image: url(../images/r6.png);;
+    background-position: center center;;
+    background-repeat: no-repeat;;
+    background-size: cover;;
+    height: 400px;;
+    width: 500px;
+    padding: 70px 68px;;
+}
+
+h2{
+    font-size: 70px;;
+    text-transform: uppercase;;
+    color: #18293A;;
+}
+
+.txt h3{
+    font-size: 18px;;
+    color: #fff;;
+    text-transform: uppercase;;
+    margin-bottom: 10px;;
+}
+  
+.txt p{
+    color: #ebebeb;;
+    font-size: 16px;;
+}
+/*!---- final general ----->*/
+
+
+
+
+.footer{
+    padding: 100px 0 0 0;;
+    text-align: center;;
+}
+
+
+
+
+
+/*!---- Inicio forulario contacto ----->*/
+
+.form{
+    margin-top: 35px;;
+}
+
+.campo{
+    margin-right: 10px;;
+    padding: 17px 35px;;
+    border: 2px solid #f809d4;;
+    outline: none;;
+    color: #102934;;
+}
+
+.campo::placeholder{
+    color: #090707;;
+}
+
+.btn-2{
+    padding: 17px 35px;;
+    border-radius: 20px;
+    border: 2px solid #f809d4;;
+    background-color: #060606;;
+    color: #eff3d3;;
+}
+
+.footer-txt{
+    margin-top: 100px;;
+    border-top: 1px solid #848484;;
+    padding: 20px 0;;
+}
+
+.footer-txt p{
+    color: #848484;;
+    font-size: 16px;;
+}
+/*!---- Final forulario contacto ----->*/
+
+
+
+@media(max-width:991px){
+    .menu {
+        padding: 30px;;
+    }
+    .menu label {
+        display:initial;;
+    }
+    .menu .navbar{
+        position: absolute;;
+        top: 100%;;
+        left: 0;;
+        right: 0;;
+        background-color: #18293A;;
+        display: none;;
+    }
+    .menu .navbar ul li{
+        width: 100%;;
+    }
+    #menu:checked ~ .navbar{
+        display: inherit;;
+    }
+
+    .header{
+        min-height: 0vh;
+    }
+
+    .header-content{
+        padding: 100% 30px;
+    }
+
+    .header-txt h1{
+        font-size: 50px;
+    }
+
+    .header-txt p{
+        padding: 0;
+    }
+
+    .general{
+        padding: 30px 30px 0 30px;
+    }
+
+    .general-content{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .general-1,
+    .general-2,
+    .general-3,
+    .general-4,
+    .general-5,
+    .general-6{
+        height: 350px;
+        padding: 100px 30px;
+        margin-bottom: 10px ;
+    }
+
+    .info-1{
+        padding: 200px 30px;
+        background-size: cover;
+        margin-top: -110px;
+    }
+
+    .info-circle{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .circle-txt{
+        width: 100%;
+        margin-bottom: 25%;
+    }
+
+    .g2{
+        margin-top: -120px;   
+    }
+
+    .info-2{
+        padding: 200px 30px;
+        background-size: cover;
+        margin-top: -180px;
+    }
+
+    .testi{
+        flex-direction: column;
+    }
+
+    .testi-left{
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .testi-right{
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .h2{
+        font-size: 40px;
+    }
+
+    
+    .footer{
+        padding: 0;
+        margin-top: -140px;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        padding: 0 50px;
+    }
+
+    .campo{
+        margin: 0 0 10px 0;
+    }
+    .footer-txt{
+        margin-top: 30px;
+    }
+}
+
+
+
+/*!-------------- Inicio Parrafo Marquee------------->*/
+.parrafo1 marquee{
+    font-size: 20px;
+    font-style: italic;
+    text-align: justify;
+    
+	-webkit-box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+}
+
+.parrafo2 marquee{
+    font-size: 20px;
+    font-style: italic;
+    text-align: justify;
+
+	-webkit-box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+}
+
+.parrafo3 marquee{
+    font-size: 20px;
+    font-style: italic;
+    text-align: justify;
+
+	-webkit-box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+}
+
+.parrafo1{
+    font-size: 20px;
+    font-style: italic;
+    text-align: justify;
+
+	-webkit-box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+}
+
+.parrafo2{
+    font-size: 20px;
+    font-style: italic;
+    text-align: justify;
+
+	-webkit-box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+}
+
+.parrafo3{
+    font-size: 20px;
+    font-style: italic;
+    text-align: justify;
+
+	-webkit-box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+box-shadow: -15px 7px 45px -3px rgba(0,0,0,0.75);
+}
+/*!-----------  Final Parrafo marqueeee ------------->*/
+/*!--------------------------------------------------->*/
+
+
+/*!---------------------------------------------------->*/
+  /*!---- Inicial Reproductor y PALA-PT ----->*/
+  .home .flexy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 4px;
+    margin-top:  3px;
+}
+  /*!---- Final Reproductor y PALA-PT ----->*/
+  /*!------------------------------------------------>*/
+
+
+    
+/*!---------------------------------------------------->*/
+/*!----  Inicio Las OPCIONES---->*/
+.opciones {
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.opciones li {
+   float: center;
+   list-style: none;
+   display: flex;
+   float: right;
+}
+
+.opciones li a {
+    color: #000;
+    padding: 2px 2px;
+    text-decoration: none;
+    display: flex;
+    position: center;
+ }
+  /*!-------->*/
+ .opciones li a:hover {
+    color: white;
+    background: #00ff24;
+    border-radius: 10px;
+    display: flex;
+ }
+/*!----  Final  Las OPCIONES---->*/
+/*!-------------------------------------------------->*/
+
+
+/*!---------------------------------------------------->*/
+
+/*!---- Inicio de Artesanias ------>*/
+.mochila-container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    flex-wrap: wrap;
+    /*!-----ojoooooooo--->*/ 
+    max-width: 1200px;
+    width: 100%;
+      /*!-------->*/
+    margin: 10px auto;
+}
+
+
+      /*!-------->*/
+.mochila {
+    width: 15%;
+    background-color: hwb(69 33% 29%);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 3px;
+}
+
+.mochila img {
+    width: 100%;
+    height: 100px;
+    padding: 4px;
+}
+
+.mochila-content {
+    padding: 6px;
+}
+
+.mochila-content h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.mochila-content p{
+    color: #000;
+    font-size: 15px;
+    line-height: 2.5;
+}
+
+.mochila-content .btn {
+    display: inline-block;
+    padding: 6px 6px;
+    background-color: #000;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+/*!---- Final artesanias ------>*/
+
+/*!--------------------------------------------------->*/
+
+
+
+
+/*!-------------------------------------------------->*/
+/*!-- Inicio INSTRUMENTOS salsa  Face y Back------>*/
+.totumo-head {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+
+}
+
+/*!----Inicio Parte Frontal ----->*/
+.card {
+    position: center;
+    width: 100%;
+    height: 340px;
+    margin: 4px;
+    padding: 0px;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    max-width: 1100px;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 0px;
+    overflow: hidden;
+    transition: .5s;  
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    border-radius: 4px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background: rgba(0,0,0,.4); /*!-color regleta conga-trompeta-maracas---->*/
+    text-align: center;
+}
+
+.card .front .laconga {
+    position: center;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+    
+.card .front .latrompeta {
+    position: center;
+    width: 100%;
+    max-height: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+    
+.card .front .lasmaracas {
+    position: center;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+    
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+/*!----Final Parte Frontal ----->*/
+/*!----Inicio Parte Trasera ----->*/
+ .card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: linear-gradient(rgb(0, 204, 126), #0575e6, #6e2d3d, #ffF260);  /*!-color back---->*/
+    padding: 10px;
+    color: #000;  /*!-color parrafos back---->*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+    text-align: center;                             
+    box-shadow: 0 5px 10px #d31293;  /*!-color borde sobresale ---->*/
+ }  
+
+ .card .back .link {
+    border-top: solid 2px #000;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a {
+    color: #fff;
+}
+
+.card .back h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+}
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+/*!----Final Parte Trasera ----->*/
+/*!------ Final INSTRUMENTOS salsa  Face y Back ----->*/
+/*!-------------------------------------------------->*/
+
+
+
+
+
+
+
+
+
+
+
+/*!---- imiccio info ----->*
+
+.info-1{
+    padding: 250px 0;;
+    background-image: url(../images/bg2.png);;
+    background-position: center center;;
+    background-repeat: no-repeat;;
+    background-size: 100% 100%;;
+}
+
+.info-content{
+    text-align: center;;
+}
+
+.info-content h2, span{
+    color: #fff;;
+}
+
+.info-circle{
+    display: flex;;
+    justify-content: space-between;;
+    margin-top: 55px;;
+}
+
+.circle-txt{
+    width: 25%;;
+    display: flex;;
+    flex-direction: column;;
+    align-items: center;;
+    text-align: center;;
+    margin: 0 10px;;
+}
+
+.circle-1{
+    height: 100px;;
+    width: 100px;;
+    border: 1px solid #fff;;
+    border-radius: 50%;;
+    padding-top: 35px;;
+}
+
+.circle-1 h3{
+    color: #fff;;
+    font-size: 16px;;
+}
+
+.circle-txt p{
+    color: #fff;;
+    margin-top: 25px;;
+}
+/*!---- final info ----->*/
+
+
+/*!---- inicio info-2 ----->*
+.info-2{
+    padding: 250px 0;;
+    background-image: url(../images/bg3.png);;
+    background-position: center center;;
+    background-repeat: no-repeat;;
+    background-size: 100% 100%;;
+}
+
+
+/*!---- final ----->*
+
+.testi{
+    display: flex;;
+    align-items: center;;
+    text-align: left;;
+    margin-top: 35px;;
+}
+
+.testi-left{
+    width: 50%;;
+    padding-right: 25px;;
+}
+
+.testi-right{
+    width: 50%;;
+    padding-left: 35px;;
+}
+
+.testi-txt{
+    margin-bottom: 25px;;
+}
+
+.testi-txt img{
+    width: 50px;;
+    margin-bottom: 15px;;
+}
+
+.testi-txt h3{
+    font-size: 20px;;
+    color: #fff;;
+}
+
+.testi-txt p{
+    color: #fff;;
+    font-size: 16px;;
+}
+/*!---- final info-2 ----->*/
+/*!---- ------------------------------------------->*/
+
+
+
+
+/*!---- -------------------------------------------->*/
+
+/*!-------->*
+  .nav {
+    width: 100%;
+    max-height: 1800px;
+    height: 100%;
+    border: 1px auto;
+
+    color: white;
+    float: center;
+    margin: 5px 0 0 0;
+    display: flex;
+}
+  /*!-------->*/
+
+
+
+  /*!-------->*
+
+.header {
+    width: 100%;
+    height: 120px;
+    border: 1px auto;
+    color: #000;
+    float: left;
+    border-radius: 10px 10px 0 0;
+}
+  /*!-------->*/
+  /*!---- ------------------------------------------>*/
+
+
+
+
+
+/*!-------------------------------------------------->*/
+/*!---- -inicio venta  Splide ------>*
+.containero {
+    max-width: 100%;
+    width: 1200px;
+    max-height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 490%;
+    left: 14%;
+    transform: translate(-50%, -50%);
+}
+
+.splide ul img{
+    height: 285px;
+    position: absolute;
+    max-width: 100%;
+    border-radius: 15px 15px;
+    cursor: pointer;
+}
+/*!------ Final venta  Splide ------>*/
+/*!------------------------------------------------->*/
+
+
+
+/*!---------Inicio Menu Hambuergueza------------------>*/
+.menu{
+    position: fixed;
+    top: 30px;
+    right: 10px;
+    background: #ffffff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px black;
+}
+
+.menu-navegacion{
+    position: fixed;
+    top: 39px;
+    right: 0;
+    width: 6vw;
+    height: 92%;
+    background-image: url(../images/fondoRep.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    transform: translate(110%);
+    box-shadow: 0 0 6px black;
+    z-index: 1; 
+}
+
+.close {
+    padding: 0;
+    margin: 0;
+    display: block;
+    text-align: center;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 4px;
+    top: 10px;
+    background: rgb(2, 251, 172);
+    color: #000;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 8px black;
+} 
+
+.menu-navegacion .images{
+    border-radius: 50%;
+    width: 30%;
+    height: 1%;
+    text-align: center;
+    color:#fff;
+    background: red;
+}
+
+.menu-navegacion .name {
+    border-radius: 10%;
+    width: 55%;
+    text-align: center;
+    color: #000000;
+    background: #f3f1f1;
+    font-size: 12px;
+}
+
+.spread{
+    transform: translate(0);
+}
+
+.menu-navegacion a{
+    color:#fff;
+    background: hsl(44, 98%, 50%);
+    text-decoration: none;
+}
+
+@media(max-width:700px){
+    .menu-navegacion{
+        color: #000;   /*!---- ojo sin este color ----->*/
+    }
+}
+
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 2px;
+    width: 50px;
+    height: 50px;
+    border: 1.5px solid black;
+    border-radius: 40px;
+    text-align: center;
+    color: rgb(137, 168, 65);
+}
+
+.social-media-icon:hover{
+    background: #fff;
+    color: #f00808;
+}
+
+.social-media-icon i{
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.main{
+    padding-top: 3rem;
+}
+/*!------------------------Final Menu Hambuergueza------------------>*/
+
+
+
